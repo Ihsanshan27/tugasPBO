@@ -2,8 +2,9 @@ package tugas;
 
 import java.util.Scanner;
 
-class Printer {
+public class cetaknama {
     private int jmlCetak;
+    private String nama;
 
     public int getJmlCetak() {
         return jmlCetak;
@@ -12,8 +13,6 @@ class Printer {
     public void setJmlCetak(int jmlCetak) {
         this.jmlCetak = jmlCetak;
     }
-
-    private String nama;
 
     public String getNama() {
         return nama;
@@ -29,9 +28,6 @@ class Printer {
         }
     }
 
-}
-
-public class cetaknama {
     public static void main(String args[]) {
         Scanner scanner = new Scanner(System.in);
 
@@ -42,7 +38,7 @@ public class cetaknama {
         System.out.print("Mau cetak berapa kali? ");
         int cetak = scanner.nextInt();
 
-        Printer printer = new Printer();
+        cetaknama printer = new cetaknama();
         printer.setNama(nama);
         printer.setJmlCetak(cetak);
 

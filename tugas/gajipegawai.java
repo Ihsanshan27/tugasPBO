@@ -2,11 +2,11 @@ package tugas;
 
 import java.util.Scanner;
 
-class Pegawai {
+public class gajipegawai {
     private String nama, alamat;
     private int UangTransport, UangTunjangan, GajiPokok, TotalGaji;
 
-    public Pegawai(String nama, String alamat, int uangTransport, int uangTunjangan, int gajiPokok) {
+    public gajipegawai(String nama, String alamat, int uangTransport, int uangTunjangan, int gajiPokok) {
         this.nama = nama;
         this.alamat = alamat;
         UangTransport = uangTransport;
@@ -36,7 +36,7 @@ class Pegawai {
     }
 
     public void setUangTransport(int uangTransport) {
-        UangTransport = uangTransport;
+        this.UangTransport = uangTransport;
     }
 
     public int getUangTunjangan() {
@@ -44,7 +44,7 @@ class Pegawai {
     }
 
     public void setUangTunjangan(int uangTunjangan) {
-        UangTunjangan = uangTunjangan;
+        this.UangTunjangan = uangTunjangan;
     }
 
     public int getGajiPokok() {
@@ -63,13 +63,6 @@ class Pegawai {
         this.TotalGaji = totalGaji;
     }
 
-    // public int TotalGaji(){
-    // return UangTransport + UangTransport + GajiPokok;
-    // }
-
-}
-
-public class gajipegawai {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
@@ -77,11 +70,12 @@ public class gajipegawai {
         String alamat = "Bogor";
         int uangTransport = 5000;
         int uangTunjangan = 10000;
-        int gajiPokok = 5000300;
+        int gajiPokok = 500000;
 
-        Pegawai pegawai = new Pegawai(nama, alamat, uangTransport, uangTunjangan, gajiPokok);
+        gajipegawai pegawai = new gajipegawai(nama, alamat, uangTransport, uangTunjangan, gajiPokok);
 
-        System.out.println("Data Pegawai:");
+        System.out.println("### DATA GAJI KARYAWAN");
+        System.out.println("========================");
         System.out.println("Nama: " + pegawai.getNama());
         System.out.println("Alamat: " + pegawai.getAlamat());
         System.out.println("Uang Transport: " + pegawai.getUangTransport());

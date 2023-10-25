@@ -1,10 +1,22 @@
 package tugas;
 
 class Persegi {
-    private double sisi;
 
-    public Persegi(double sisi) {
+}
+
+class PersegiPanjang {
+
+}
+
+public class hitungluas {
+    private double sisi;
+    private double panjang;
+    private double lebar;
+
+    public hitungluas(double sisi, double panjang, double lebar) {
         this.sisi = sisi;
+        this.panjang = panjang;
+        this.lebar = lebar;
     }
 
     public double getSisi() {
@@ -13,25 +25,6 @@ class Persegi {
 
     public void setSisi(double sisi) {
         this.sisi = sisi;
-    }
-
-    public double hitungKeliling() {
-        return 4 * sisi;
-    }
-
-    public double hitungLuas() {
-        return sisi * sisi;
-    }
-
-}
-
-class PersegiPanjang {
-    private double panjang;
-    private double lebar;
-
-    public PersegiPanjang(double panjang, double lebar) {
-        this.panjang = panjang;
-        this.lebar = lebar;
     }
 
     public double getPanjang() {
@@ -50,24 +43,29 @@ class PersegiPanjang {
         this.lebar = lebar;
     }
 
-    public double hitungKeliling() {
+    public double KelilingPersegi() {
+        return 4 * sisi;
+    }
+
+    public double LuasPersegi() {
+        return sisi * sisi;
+    }
+
+    public double KelilingPersegiPanjang() {
         return 2 * (panjang + lebar);
     }
 
-    public double hitungLuas() {
+    public double LuasPersegiPanjang() {
         return panjang * lebar;
     }
-}
 
-public class hitungluas {
     public static void main(String args[]) {
-        Persegi persegi = new Persegi(5);
-        PersegiPanjang persegiPanjang = new PersegiPanjang(5, 6);
+        hitungluas datar = new hitungluas(5, 5, 6);
 
-        System.out.println("Luas Persegi: " + persegi.hitungLuas());
-        System.out.println("Keliling Persegi: " + persegi.hitungKeliling());
+        System.out.println("Luas Persegi: " + datar.LuasPersegi());
+        System.out.println("Keliling Persegi: " + datar.KelilingPersegi());
 
-        System.out.println("Luas Persegi Panjang: " + persegiPanjang.hitungLuas());
-        System.out.println("Keliling Persegi Panjang: " + persegiPanjang.hitungKeliling());
+        System.out.println("Luas Persegi Panjang: " + datar.LuasPersegiPanjang());
+        System.out.println("Keliling Persegi Panjang: " + datar.KelilingPersegiPanjang());
     }
 }

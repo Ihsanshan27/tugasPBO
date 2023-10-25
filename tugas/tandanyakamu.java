@@ -3,9 +3,13 @@ package tugas;
 import java.util.Scanner;
 
 class Age {
+
+}
+
+public class tandanyakamu {
     private int yearBirth, yearNow;
 
-    public Age(int yearNow) {
+    public tandanyakamu(int yearNow) {
         this.yearNow = yearNow;
     }
 
@@ -45,12 +49,9 @@ class Age {
         }
     }
 
-}
-
-public class tandanyakamu {
     public static void main(String args[]) {
         Scanner scanner = new Scanner(System.in);
-        Age age = new Age(2023);
+        tandanyakamu age = new tandanyakamu(2023);
 
         System.out.print("Masukan tahun lahir kamu: ");
         int tahunLahir = scanner.nextInt();

@@ -3,6 +3,10 @@ package tugas;
 import java.util.Scanner;
 
 class nilai {
+
+}
+
+public class nilaimahasiswa {
     private double quiz, uts, uas;
 
     public double getQuiz() {
@@ -29,7 +33,7 @@ class nilai {
         this.uas = uas;
     }
 
-    public nilai(double quiz, double uts, double uas) {
+    public nilaimahasiswa(double quiz, double uts, double uas) {
         this.quiz = quiz;
         this.uts = uts;
         this.uas = uas;
@@ -71,12 +75,9 @@ class nilai {
         }
     }
 
-}
-
-public class nilaimahasiswa {
     public static void main(String args[]) {
         Scanner scanner = new Scanner(System.in);
-        nilai Nilai = new nilai(0, 0, 0);
+        nilaimahasiswa Nilai = new nilaimahasiswa(0, 0, 0);
 
         System.out.print("Masukan nilai Quiz : ");
         double nilaiQuiz = scanner.nextInt();

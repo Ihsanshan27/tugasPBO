@@ -1,23 +1,36 @@
-// nilai nilaiMahasiswa = new nilai(10, 25, 10); // Mengganti nilai quiz, uts, dan uas sesuai kebutuhan
+package tugas;
 
-//         // Mengambil nilai quiz, uts, uas
-//         double quiz = nilaiMahasiswa.getQuiz();
-//         double uts = nilaiMahasiswa.getUts();
-//         double uas = nilaiMahasiswa.getUas();
+public class test {
+    private float kuatArus;
+    private float hambatan;
 
-//         // Menghitung nilai akhir
-//         double nilaiAkhir = nilaiMahasiswa.NilaiAkhir();
+    public test(float kuatArus, float hambatan) {
+        this.kuatArus = kuatArus;
+        this.hambatan = hambatan;
+    }
 
-//         // Mendapatkan indeks
-//         String indeks = nilaiMahasiswa.Index((int) nilaiAkhir);
+    public test() {
+        this.kuatArus = 0.0f;
+        this.hambatan = 0.0f;
+    }
 
-//         // Mendapatkan keterangan
-//         String keterangan = nilaiMahasiswa.Keterangan(indeks);
+    public float getKuatArus() {
+        return kuatArus;
+    }
 
-//         // Menampilkan hasil
-//         System.out.println("Nilai Quiz: " + quiz);
-//         System.out.println("Nilai UTS: " + uts);
-//         System.out.println("Nilai UAS: " + uas);
-//         System.out.println("Nilai Akhir: " + nilaiAkhir);
-//         System.out.println("Indeks: " + indeks);
-//         System.out.println("Keterangan: " + keterangan);
+    public float getHambatan() {
+        return hambatan;
+    }
+
+    public float hitungTegangan() {
+        return kuatArus * hambatan;
+    }
+
+    public static void main(String args[]) {
+        test baterai = new test(5.0f, 6.0f);
+
+        System.out.println("Kuat Arus = " + baterai.getKuatArus() + " ampere");
+        System.out.println("Hambatan  = " + baterai.getHambatan() + " ohm");
+        System.out.println("Hasil Tegangan = " + baterai.hitungTegangan() + " volt");
+    }
+}
