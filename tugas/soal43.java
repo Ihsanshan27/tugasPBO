@@ -41,13 +41,7 @@ public class soal43 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        String nama = "ihsan";
-        String alamat = "Bogor";
-        int uangTransport = 5000;
-        int uangTunjangan = 10000;
-        int gajiPokok = 500000;
-
-        soal43 pegawai = new soal43(nama, alamat, uangTransport, uangTunjangan, gajiPokok);
+        soal43 pegawai = new soal43("ihsan", "bogor", 350000, 500000, 4500000);
 
         System.out.println("### DATA GAJI KARYAWAN");
         System.out.println("========================");
