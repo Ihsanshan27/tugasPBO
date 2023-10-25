@@ -39,7 +39,7 @@ public class soal43 {
     }
 
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        // Scanner input = new Scanner(System.in);
 
         soal43 pegawai = new soal43("ihsan", "bogor", 350000, 500000, 4500000);
 
@@ -52,7 +52,7 @@ public class soal43 {
         System.out.println("Gaji Pokok: " + pegawai.getGajiPokok());
         System.out.println("Total Gaji: " + pegawai.TotalGaji());
 
-        input.close();
+        // input.close();
 
     }
 }
