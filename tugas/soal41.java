@@ -1,10 +1,10 @@
 package tugas;
 
-public class masajenis {
+public class soal41 {
     private int sisi;
     private int massa;
 
-    public masajenis(int sisi, int massa) {
+    public soal41(int sisi, int massa) {
         this.sisi = sisi;
         this.massa = massa;
     }
@@ -34,7 +34,7 @@ public class masajenis {
     }
 
     public static void main(String[] args) {
-        masajenis kubus = new masajenis(5, 250);
+        soal41 kubus = new soal41(5, 250);
 
         System.out.println("Volume : " + kubus.volume());
         System.out.println("Massa Jenis : " + kubus.massaJenis());

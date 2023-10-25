@@ -1,9 +1,9 @@
 package tugas;
 
-public class hukumohm {
+public class soal44 {
     private float kuatArus, hambatan;
 
-    public hukumohm(float kuatArus, float hambatan) {
+    public soal44(float kuatArus, float hambatan) {
         this.kuatArus = kuatArus;
         this.hambatan = hambatan;
     }
@@ -21,7 +21,7 @@ public class hukumohm {
     }
 
     public static void main(String args[]) {
-        hukumohm baterai = new hukumohm(5.0f, 6.0f);
+        soal44 baterai = new soal44(5.0f, 6.0f);
 
         System.out.println("Kuat Arus = " + baterai.getKuatArus() + " ampere");
         System.out.println("Hambatan  = " + baterai.getHambatan() + " ohm");

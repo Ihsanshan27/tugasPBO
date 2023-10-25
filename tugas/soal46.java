@@ -6,10 +6,10 @@ class Age {
 
 }
 
-public class tandanyakamu {
+public class soal46 {
     private int yearBirth, yearNow;
 
-    public tandanyakamu(int yearNow) {
+    public soal46(int yearNow) {
         this.yearNow = yearNow;
     }
 
@@ -51,7 +51,7 @@ public class tandanyakamu {
 
     public static void main(String args[]) {
         Scanner scanner = new Scanner(System.in);
-        tandanyakamu age = new tandanyakamu(2023);
+        soal46 age = new soal46(2023);
 
         System.out.print("Masukan tahun lahir kamu: ");
         int tahunLahir = scanner.nextInt();

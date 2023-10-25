@@ -6,7 +6,7 @@ class nilai {
 
 }
 
-public class nilaimahasiswa {
+public class soal47 {
     private double quiz, uts, uas;
 
     public double getQuiz() {
@@ -33,7 +33,7 @@ public class nilaimahasiswa {
         this.uas = uas;
     }
 
-    public nilaimahasiswa(double quiz, double uts, double uas) {
+    public soal47(double quiz, double uts, double uas) {
         this.quiz = quiz;
         this.uts = uts;
         this.uas = uas;
@@ -77,7 +77,7 @@ public class nilaimahasiswa {
 
     public static void main(String args[]) {
         Scanner scanner = new Scanner(System.in);
-        nilaimahasiswa Nilai = new nilaimahasiswa(0, 0, 0);
+        soal47 Nilai = new soal47(0, 0, 0);
 
         System.out.print("Masukan nilai Quiz : ");
         double nilaiQuiz = scanner.nextInt();

@@ -2,10 +2,10 @@ package tugas;
 
 import java.util.Scanner;
 
-public class tabungan {
+public class soal42 {
     private int saldo;
 
-    public tabungan(int saldoAwal) {
+    public soal42(int saldoAwal) {
         saldo = saldoAwal;
     }
 
@@ -31,7 +31,7 @@ public class tabungan {
         System.out.print("Masukan Saldo Awal: ");
         int saldoAwal = input.nextInt();
 
-        tabungan Tabungan = new tabungan(saldoAwal);
+        soal42 Tabungan = new soal42(saldoAwal);
 
         System.out.print("Masukan jumlah uang yang akan diambil: ");
         int jumlahTarik = input.nextInt();
